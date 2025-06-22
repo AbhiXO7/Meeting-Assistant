@@ -8,7 +8,7 @@ class MeetingSummarizer:
         try:
             self.summarizer = pipeline(
                 "summarization", 
-                model="facebook/bart-large-cnn",
+                model="sshleifer/distilbart-cnn-12-6",
                 device=-1  # Use CPU
             )
             print("✅ Summarization model loaded!")
